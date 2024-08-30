@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 0;
+    border: none;
+    overflow: hidden;
+}
+
+.app {
+    background-image: linear-gradient(to bottom right, darkgreen, darkblue);
+
+    padding: 1vh;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Small devices */
+.gif_grid {
+    column-count: 1;
+    column-gap: .5vh;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .gif_grid {
+        column-count: 2;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .gif_grid {
+        column-count: 3;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .gif_grid {
+        column-count: 5;
+    }
+}
+.gif_container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: .5vh;
+}
+.gif {
+    max-width: 100%;
+    height: auto;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.search_bar {
+    height: 6vh;
+    border: solid 1px;
+    border-radius: 5px;
+
+    display: flex;
+    margin-bottom: .5vh;
+} 
+.search_indicator {
+    flex: .1;
+    background-color: cyan;
+    border-left: solid 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+}
+.search_input {
+    flex: 1;
+    padding: 1%;
+    font-size: 3vh;
+}
+.search_input:focus {
+    outline: none;
+}
+
+.icon {
+    height: 100%;
+}
