@@ -5,7 +5,7 @@ export default function GifGrid({ gifs }) {
         <div className="gif_grid">
             {gifs.map(gif => {
                 const { url } = gif.images.original
-                return <Gif key={url} url={url} alt={gif.alt_text} />
+                return <Gif key={gif.id} url={url} alt={gif.alt_text} />
             })}
         </div>
     )
